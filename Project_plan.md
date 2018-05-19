@@ -4,13 +4,13 @@ City of Chicago dataset.
 - [Visitors in a library of chicago from 2014](https://data.cityofchicago.org/Education/Libraries-2014-Visitors-by-Location/si8n-dg3u)
 - [RedLight camera violations](https://data.cityofchicago.org/Transportation/Red-Light-Camera-Violations/spqx-js37)
 
-## what technology we will be using and why
+## What technology we will be using and why
 Pypark for analyzing the dataset due to it's in memory computation of RDD
 
-## what we want to preprocess from the data
+## What we want to preprocess from the data
 Most of them are already preprocessed.
 
-## what we want to analyze or what aspect we should analyze
+## What we want to analyze or what aspect we should analyze
 - No of crimes in a particular area of chicago
 - No of visitors in library o chicago from 2014
 - No of red light violations mapped with area of intersection
