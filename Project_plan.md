@@ -1,10 +1,16 @@
-# Choose the dataset
-I am inclined towards city of chicago dataset as it is available in JSON format so there will be no problem reading the dataset only problem can be that it is small dataset so we need to some duplication of data.
+## Choose the dataset
+City of Chicago dataset.
+- [Crimes rate from year 2001](https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2)
+- [Visitors in a library of chicago from 2014](https://data.cityofchicago.org/Education/Libraries-2014-Visitors-by-Location/si8n-dg3u)
+- [RedLight camera violations](https://data.cityofchicago.org/Transportation/Red-Light-Camera-Violations/spqx-js37)
 
-#what technology we will be using and why
-Still not sure but maybe spark as it is much faster than hadoop but still not good enough reason as we have 9.5 gb data so even if we choose hadoop there won't be much of a difference
+## what technology we will be using and why
+Pypark for analyzing the dataset due to it's in memory computation of RDD
 
-#what we want to preprocess from the data
-what we can filter out in data
+## what we want to preprocess from the data
+Most of them are already preprocessed.
 
-#what we want to analyze or what aspect we should analyze
+## what we want to analyze or what aspect we should analyze
+- No of crimes in a particular area of chicago
+- No of visitors in library o chicago from 2014
+- No of red light violations mapped with area of intersection
