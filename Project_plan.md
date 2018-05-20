@@ -5,7 +5,6 @@ City of Chicago dataset.
 - [Visitors in a library of chicago from 2013](https://data.cityofchicago.org/Education/Libraries-2013-Visitors-by-Location/x74m-smqb/data)
 - [Visitors in a library of chicago from 2012](https://data.cityofchicago.org/Education/Libraries-2012-Visitors-by-Location/zh3n-jtnt/data)
 - [Annual Taxpayer Location Address List 2014](https://data.cityofchicago.org/Community-Economic-Development/Annual-Taxpayer-Location-Address-List-2014/kukh-c9wt/data)
-- 
 - [RedLight camera violations](https://data.cityofchicago.org/Transportation/Red-Light-Camera-Violations/spqx-js37)
 - [Libraries - Locations, Hours and Contact Information](https://data.cityofchicago.org/Education/Libraries-Locations-Hours-and-Contact-Information/x8fc-8rcq) 
 
