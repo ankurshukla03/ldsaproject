@@ -18,14 +18,13 @@ JSON is a standard text-based format for representing structured data based. It 
 5) XML (Extensible Markup Language)
 	XML file format is used to create common information formats and share both the format and the data on the web [5].
 
-We used Spark for analyzing the city of Chicago dataset to find ‘the frequency of crime over the crime categories’. The data format we have chosen is “CSV”, offering us the following advantages [6]:
+We used Spark for analyzing the city of Chicago dataset to find ‘the frequency of crime over crime categories’. In Chicago dataset, the published crime records are in structured format. It is much convenient to relate columns in structured format. We have chosen “CSV” format to analysis the inter-related fields. The CSV format offer us the following advantages [6]:
 
 -	CSV file follows simple schema; It can be opened or edited by text editors and manipulated programmatically at ease.
 -	Importing CSV file is much faster and consumes less memory
 -	CSV is compact. For XML you start tag and end tag for each column in each row. In CSV you write the column headers only once.
-
-
-
+-	CSV is feasible for sending huge data amounts with less bandwidth.
+It requires to build a parsing and containing structure for CSV, while XML DOM provides an inherent structure. XML provides data hierarchy and convenient to query of a data field; CSV does not support data hierarchies. JSON is more compact and easier to work with scale [7].
  
 References
 [1] CSV - Comma Separated Values [Online]. Available: https://frictionlessdata.io/docs/csv/
@@ -40,3 +39,4 @@ https://whatis.techtarget.com/fileformat/XML-eXtensible-markup-language
 
 [6] CSV - What, Why and How [Online]. Available:
 https://www.shopping-cart-migration.com/blog/61-must-know-tips/5985-csv-what-why-and-how
+[7] Reasons You Should Use JSON Instead of CSV [Online]. Available: https://blog.datafiniti.co/4-reasons-you-should-use-json-instead-of-csv-2cac362f1943
