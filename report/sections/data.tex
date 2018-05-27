@@ -1,42 +1,28 @@
-\section{Data}
+\section{Data Format}
 
 %TODO: Describe the data format(s) used in the dataset. Put them in context: why were the specific formats chosen, and would there be alternatives? What are the pros and cons of the formats used?
-Data Format 
 The Chicago dataset provides a farraginous data formats as listed below:
-1) CSV (Comma Separated Values) 
-CSV format stores tabular data in 2-Dimensional consisting of row(s) and column(s). Each row in the csv file is considered as a record and the data fields are separated by commas, and the rows are separated by a new line [1].
+\begin{itemize}
+    \item \textbf{CSV (Comma Separated Values)}: CSV format stores tabular data in 2-Dimensional consisting of row(s) and column(s). Each row in the csv file is considered as a record and the data fields are separated by commas, and the rows are separated by a new line\cite{csv}.
+    \item \textbf{JSON (JavaScript Object Notation)}: JSON is a standard text-based format for representing structured data based. It is widely used for transmitting data in web applications\cite{json}.
+    \item \textbf{RDF (Resource Description Framework)}: RDF framework is written in XML for describing the resources on the web; it allows effective data integration from multiple data objects\cite{rdf}.
+    \item \textbf{RSS (Rich Site Summary)}: RSS is a Syndication Standard based on a type of XML file that resides on an Internet server. RSS is formally known as Really Simple Syndication\cite{rss}.
+    \item \textbf{XML (Extensible Markup Language)}: XML file format is used to create common information formats and share both the format and the data on the web \cite{xml}.
+\end{itemize}
 
-2) JSON (JavaScript Object Notation) 
-JSON is a standard text-based format for representing structured data based. It is widely used for transmitting data in web applications [2].
+We used Spark for analyzing the city of Chicago dataset to find ‘the frequency of crime over crime categories’. In Chicago dataset, the published crime records are in structured format. It is much convenient to relate columns in structured format. We have chosen “CSV” format to analysis the inter-related fields.\newline
+The CSV format offer us the following advantages\cite{csv_advantage}:
+\begin{itemize}
+    \item CSV file follows simple schema, it can be opened or edited by text editors and manipulated programmatically at ease.
+    \item Importing CSV file is much faster and consumes less memory.
+    \item CSV is compact. For XML you start tag and end tag for each column in each row. In CSV you write the column headers only once.
+    \item CSV is feasible for sending huge data amounts with less bandwidth.
+\end{itemize}
 
-3) RDF (Resource Description Framework)
-	RDF framework is written in XML for describing the resources on the web; it allows effective data integration from multiple data objects [3].
-	
-4) RSS (Rich Site Summary)
-	RSS is a Syndication Standard based on a type of XML file that resides on an Internet server. RSS is formally known as Really Simple Syndication [4].
+It requires to build a parsing and containing structure for CSV, while XML DOM provides an inherent structure. XML provides data hierarchy and convenient to query of a data field; CSV does not support data hierarchies. JSON is more compact and easier to work with scale\cite{json_advantage}.
 
-5) XML (Extensible Markup Language)
-	XML file format is used to create common information formats and share both the format and the data on the web [5].
 
-We used Spark for analyzing the city of Chicago dataset to find ‘the frequency of crime over crime categories’. In Chicago dataset, the published crime records are in structured format. It is much convenient to relate columns in structured format. We have chosen “CSV” format to analysis the inter-related fields. The CSV format offer us the following advantages [6]:
 
--	CSV file follows simple schema; It can be opened or edited by text editors and manipulated programmatically at ease.
--	Importing CSV file is much faster and consumes less memory
--	CSV is compact. For XML you start tag and end tag for each column in each row. In CSV you write the column headers only once.
--	CSV is feasible for sending huge data amounts with less bandwidth.
-It requires to build a parsing and containing structure for CSV, while XML DOM provides an inherent structure. XML provides data hierarchy and convenient to query of a data field; CSV does not support data hierarchies. JSON is more compact and easier to work with scale [7].
- 
-References
-[1] CSV - Comma Separated Values [Online]. Available: https://frictionlessdata.io/docs/csv/
 
-[2] JSON: What It Is, How It Works, & How to Use It [Online]. Available: https://www.copterlabs.com/json-what-it-is-how-it-works-how-to-use-it/
 
-[3] RDF file [Online]. Available: https://fileinfo.com/extension/rdf
-[4] What is RSS [Online]. Available: https://www.xml.com/pub/a/2002/12/18/dive-into-xml.html
 
-[5] XML File Format [Online]. Available:
-https://whatis.techtarget.com/fileformat/XML-eXtensible-markup-language
-
-[6] CSV - What, Why and How [Online]. Available:
-https://www.shopping-cart-migration.com/blog/61-must-know-tips/5985-csv-what-why-and-how
-[7] Reasons You Should Use JSON Instead of CSV [Online]. Available: https://blog.datafiniti.co/4-reasons-you-should-use-json-instead-of-csv-2cac362f1943
