@@ -1,0 +1,28 @@
+\section{Data Format}
+
+%TODO: Describe the data format(s) used in the dataset. Put them in context: why were the specific formats chosen, and would there be alternatives? What are the pros and cons of the formats used?
+The Chicago dataset provides a farraginous data formats as listed below:
+\begin{itemize}
+    \item \textbf{CSV (Comma Separated Values)}: CSV format stores tabular data in 2-Dimensional consisting of row(s) and column(s). Each row in the csv file is considered as a record and the data fields are separated by commas, and the rows are separated by a new line\cite{csv}.
+    \item \textbf{JSON (JavaScript Object Notation)}: JSON is a standard text-based format for representing structured data based. It is widely used for transmitting data in web applications\cite{json}.
+    \item \textbf{RDF (Resource Description Framework)}: RDF framework is written in XML for describing the resources on the web; it allows effective data integration from multiple data objects\cite{rdf}.
+    \item \textbf{RSS (Rich Site Summary)}: RSS is a Syndication Standard based on a type of XML file that resides on an Internet server. RSS is formally known as Really Simple Syndication\cite{rss}.
+    \item \textbf{XML (Extensible Markup Language)}: XML file format is used to create common information formats and share both the format and the data on the web \cite{xml}.
+\end{itemize}
+
+We used Spark for analyzing the city of Chicago dataset to find ‘the frequency of crime over crime categories’. In Chicago dataset, the published crime records are in structured format. It is much convenient to relate columns in structured format. We have chosen “CSV” format to analysis the inter-related fields.\newline
+The CSV format offer us the following advantages\cite{csv_advantage}:
+\begin{itemize}
+    \item CSV file follows simple schema, it can be opened or edited by text editors and manipulated programmatically at ease.
+    \item Importing CSV file is much faster and consumes less memory.
+    \item CSV is compact. For XML you start tag and end tag for each column in each row. In CSV you write the column headers only once.
+    \item CSV is feasible for sending huge data amounts with less bandwidth.
+\end{itemize}
+
+It requires to build a parsing and containing structure for CSV, while XML DOM provides an inherent structure. XML provides data hierarchy and convenient to query of a data field; CSV does not support data hierarchies. JSON is more compact and easier to work with scale\cite{json_advantage}.
+
+
+
+
+
+

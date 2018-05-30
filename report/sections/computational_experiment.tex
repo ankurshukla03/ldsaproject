@@ -1,0 +1,8 @@
+\section{Computational Experiment}
+
+%TODO: The main section of the report. Describe and motivate the choice of tools and the distributed system that you designed. Describe how you have designed your scalability experiments,and present the results.
+
+\subsection{Scalability experiment}
+In order to test and confirm the scalability of the system, scalability studies were conducted. Since the original dataset was only 1,45 GB, it was scaled up by replicating it in order to get larger datasets. Four different sizes of the dataset were produced including the original one. These were 1.45 GB, 11.2 GB, 22.4 GB and 35 GB. 
+
+To measure the horizontal scalability, the run time for a specific job on the dataset were recorded for 1 to 4 nodes in the cluster. It was of interest to investigate if the run time increased linearly with data size for the different cluster configurations as well as if the run time was reduced equally for increasing number of nodes or if there was a case of diminishing returns.
