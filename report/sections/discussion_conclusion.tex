@@ -2,4 +2,13 @@
 
 %TODO: Here you can discuss the outcome of the experiments and the experiences gained. Was your chosen approach suitable? What worked well and what could be improved?
 
-bahf b as hvbjnv iuvw
+%outcome of the experiment?
+We are satisfied with our results and they seem to be correct. When you compare them with the plots present in Chicago Crimes-2001 to present- dashboard \cite{chicago_location} and the graphs are right.
+\bigbreak
+%scalability of our code and experiences gained
+%chosen approach suitable or not
+As for the scalability experiments, both cluster configurations had a linear run time increase with increasing data size, indicating that the system scales well with regards to bigger data operations. In other words, doubling the data size also doubles the computational time, which is the wanted behaviour for this kind of system.
+
+The run time decreased by a factor of 3,15 (31,8 \% of the original time) when increasing the number of nodes from one to three. This seems to indicate that the horizontal scalability of the system is very good, at least with relatively few nodes in the cluster. Why the run time decreased to less than a third... (dont know what to write here yet)
+\bigbreak
+In order to further examine the system and the scalability of it, more cluster configurations with different number of nodes could have been tested to determine if the result holds true even for these setups. It is possible that the behaviour of the system scales well on the small clusters tested here, but experiences diminishing returns as the number of nodes goes up further. It would be interesting to see at what number of nodes and data size that potentially could happen. 
