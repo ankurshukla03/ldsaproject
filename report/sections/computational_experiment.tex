@@ -4,15 +4,14 @@
 
 This section provides the motivation for our choice of tools and briefly describes the distributed system that we designed. 
 
-\subsection{Spark \& Implementations}
+\subsection{Tools \& Implementations}
 We are using Spark as it provides a new model of computation that allows to perform multiple parallel operations on a specific set of data. In our project we apply multiple functions repeatedly to the same data set to extract various statistical information, hence Spark offers the possibility to improve significantly our performances without reloading each time the data form disk\cite{Sparkzaharia}.The thing which makes processing much faster in spark is because it runs on Memory(RAM).
 
 Our dataset is spread among a read-only collection of objects called RDD, those objects allow parallel operations with the option of caching an RDD in memory so it can be reused for other MapReduce operations. An RDD does not exist in physical storage but it is computed from data in the reliable storage. 
-We are constructing RDD from a \textit{.csv} file in a shared file system. The System we have is fault tolerant, in fact if a partition of an RDD is lost it is possible to rebuild just that partition given the information on how it was derived from other RDDs. This is called \textit{lineage}\cite{Sparkzaharia}. When we ran our code on 35 Gb dataset it divides the data in 288 partitions and computing them simultaneously on 3 nodes which makes the time taken for computation faster as you can see in Figure \ref{fig:stages_three_fourth}.
+We are constructing RDD from a \textit{.csv} file in a shared file system. The System we have is fault tolerant, in fact if a partition of an RDD is lost it is possible to rebuild just that partition given the information on how it was derived from other RDDs. This is called \textit{lineage}\cite{Sparkzaharia}.
 
 In our system a \textit{driver program} connects to a cluster of \textit{workers}, these are processes that can store RDD partitions in RAM across operations\cite{RDD}.\newline
-We started to implement a working single node and tested so we could abstract the data we wanted. When this was working correctly, we implemented so we got a master node and 3 worker
-nodes.
+Our final code used pyspark RDD and dataframe for analyzing the dataset. We started to implement a working single node and tested so we could abstract the data we wanted. When this was working correctly, we implemented so we got a master node and 3 worker nodes.When we ran our code on 35 Gb dataset it divides the data in 288 partitions and computing them simultaneously on 3 nodes which makes the time taken for computation faster as you can see in Figure \ref{fig:stages_three_fourth}. We didn't tried but maybe increasing the number of partitions may improve the performance of our 3 node cluster. 
 
 We created Virtual Machine at SNIC Science Cloud \cite{snic} and used the following settings:
 
