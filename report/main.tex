@@ -4,6 +4,7 @@
 \usepackage[english]{babel}
 
 \usepackage[numbers]{natbib}
+\usepackage[titletoc,toc,title]{appendix}
 \usepackage{amsmath}
 \usepackage{numprint}
 \usepackage{graphicx}
@@ -38,13 +39,28 @@
 \end{figure}
 }
 
-\title{LDSA Project Report by Group 12}
-\author{Ankur Shukla, Arianna Delsante, Lukas Enander, Santhosh Kumar Nagarajan}
-\date{June 01, 2018}
-
 \begin{document}
 
-\maketitle
+\begin{titlepage}
+\begin{center}
+\includegraphics[height = 5cm, width = 5cm]{Uppsala.png} \\
+\makeatletter
+\vspace*{0.8cm}
+\vspace{1 cm}
+\textsc{\Large Uppsala University\\ }
+\textsc{\large Analysis of Crimes in Chicago\\}
+\textsc{\large Large DataSet for Scientific Applications}
+\textsc{\Large}\\[0.3cm]
+\textnormal{\large Project Report by Group 12}\\
+\textnormal{Ankur Shukla}\\
+\textnormal{Arianna Delsante}\\
+\textnormal{Lukas Enander}\\
+\textnormal{Santhosh Kumar Nagarajan}\\
+\textnormal{\\\today}
+% Bottom of the page
+\end{center}
+\end{titlepage}
+
 
 \input{sections/background.tex}
 \input{sections/data.tex}
