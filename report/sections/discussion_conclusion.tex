@@ -2,4 +2,12 @@
 
 %TODO: Here you can discuss the outcome of the experiments and the experiences gained. Was your chosen approach suitable? What worked well and what could be improved?
 
-bahf b as hvbjnv iuvw
+%outcome of the experiment?
+We are convinced with the results thus obtained. The computed plots seems kindred to the graphs available in Chicago Crimes-2001 to present- dashboard \cite{chicago_location}.
+\bigbreak
+%scalability of our code and experiences gained
+%chosen approach suitable or not
+Our chosen approach of working it in Scala worked pretty well for the desired problem and for the scalability experiments carried, two configured cluster's run time  increases in linear phase for the increasing data size. It indicates that the constructed system scales well with regards to bigger data operations. In other words, doubling the data size also doubles the computational time, which is the expected behaviour of the system. The run time is decreased by a factor of 3,15 (31,8 \% of the original time), When increasing the number of nodes from one to three. This indicates that, the horizontal scalability of the system is fairly efficient, at least with few relative nodes on the cluster.
+
+\bigbreak
+In order to further examine the system's scalability, more cluster configurations with different number of nodes could be tested to determine whether the results holds true for those configurations. We can observe that the multi-node cluster scales better and performs in an efficient manner comparatively to the other single-node cluster setup for the increased data set size. For increasing the performance of our cluster configuration maybe we could have increase the minimum number of partitions than default, increasing the number of CPUs and Number of Cores so that worker node has more than 2.9 Gb memory size to work on which will improve the run time of our code very likely.
