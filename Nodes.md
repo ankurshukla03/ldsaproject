@@ -1,6 +1,6 @@
 Created 3 instances with 40 GB volume. We made 1 master and 3 worker node with ldsa2813.pem key file.
 
-Everything is already installed including spark,jupyter and pyspark.Enter jupyter notebook for the master node only as we need to make the code there to visualize it in the spark UI.
+Everything is already installed including spark,jupyter and pyspark. Enter jupyter notebook for the master node only as we need to make the code there to visualize it in the spark UI.
 
 # Master node(group12main) 
 - IPv4 - 192.168.1.71
