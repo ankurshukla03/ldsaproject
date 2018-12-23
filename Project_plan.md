@@ -10,7 +10,7 @@ City of Chicago dataset.
 - No of crimes per months in Chicago
 
 ## What technology we will be using and why
-Pypark for analyzing the dataset considering the better in-memory RDD computation technique
+Pyspark for analyzing the dataset considering the better in-memory RDD computation technique
 
 ## What we want to preprocess from the data
 Drop out the columns which are less significant 
